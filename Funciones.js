@@ -76,19 +76,3 @@ buttons.forEach(btn => {
 /************************************************************/
 
 
-const background = document.querySelector('.background');
-const secondBackground = document.querySelector('.second-background');
-
-document.addEventListener('mousemove', (e) => {
-    const mouseX = e.clientX;
-    const mouseY = e.clientY;
-    const radius = 50;
-
-    const boundingRect = background.getBoundingClientRect();
-    const offsetX = mouseX - boundingRect.left;
-    const offsetY = mouseY - boundingRect.top;
-
-    const gradient = `radial-gradient(circle ${radius}px at ${offsetX}px ${offsetY}px, transparent, black)`;
-    secondBackground.style.backgroundImage = gradient;
-});
-
