@@ -55,7 +55,7 @@ const distanceBetween = (p1x, p1y, p2x, p2y) => {
 
 /************************Trabajo****************************/
 
-
+/*
 const buttons = document.querySelectorAll(".card-buttons button");
 const sections = document.querySelectorAll(".card-section");
 const card = document.querySelector(".card");
@@ -71,7 +71,61 @@ const handleButtonClick = e => {
 };
 buttons.forEach(btn => {
     btn.addEventListener("click", handleButtonClick);
+});*/
+
+/*
+FUNCION PARA GIRAR EL CARRUSEL CON EL MOUSE
+
+var angle=0;
+function galleryspin(sing){
+spinner=document.querySelector('#spinner');
+if(!sing){
+    angle=angle+45;
+}
+else {
+angle=angle-45;
+}
+spinner.setAttribute("style","-webkit-transform:rotateY("+angle+"deg)")
+}
+*/
+
+/*FUNCION PARA QUE GIRE SOLO EL CARRUSEL*/
+
+var angle = 0;
+var rotationInterval;
+
+function startRotation() {
+    rotationInterval = setInterval(function () {
+        angle -= 45;
+        rotateCarousel();
+    }, 1500); // velocidad de rotación
+}
+
+function stopRotation() {
+    clearInterval(rotationInterval);
+}
+
+function rotateCarousel() {
+    var spinner = document.querySelector('#spinner');
+    spinner.style.transform = 'rotateY(' + angle + 'deg)';
+}
+
+// Iniciar la rotación automáticamente al cargar la página
+document.addEventListener('DOMContentLoaded', function () {
+    startRotation();
 });
+
+// Detener la rotación cuando el mouse entra en el área del carrusel
+document.querySelector('#carousel').addEventListener('mouseenter', function () {
+    stopRotation();
+});
+
+// Reiniciar la rotación cuando el mouse sale del área del carrusel
+document.querySelector('#carousel').addEventListener('mouseleave', function () {
+    startRotation();
+});
+
+
 
 /************************************************************/
 
