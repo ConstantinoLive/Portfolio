@@ -129,4 +129,33 @@ document.querySelector('#carousel').addEventListener('mouseleave', function () {
 
 /************************************************************/
 
+/*
+document.getElementById('carousel').addEventListener('mousemove', function (e) {
+    // Calcula el centro del carrusel
+    var centerX = this.offsetLeft + this.offsetWidth / 2;
+    // Calcula la distancia desde el mouse hasta el centro del carrusel
+    var distance = Math.abs(e.clientX - centerX);
+
+    // Obtiene todas las imágenes dentro del carrusel
+    var images = document.querySelectorAll('#spinner img');
+
+    // Quita la clase 'enfocada' de todas las imágenes
+    images.forEach(function (image) {
+        image.classList.remove('enfocada');
+    });
+
+    // Encuentra la imagen más cercana al centro y agrégale la clase 'enfocada'
+    var closestImage = Array.from(images).reduce(function (prev, current) {
+        var prevDistance = Math.abs(prev.offsetLeft + prev.offsetWidth / 2 - centerX);
+        var currentDistance = Math.abs(current.offsetLeft + current.offsetWidth / 2 - centerX);
+        return (prevDistance < currentDistance ? prev : current);
+    });
+
+    closestImage.classList.add('enfocada');
+});
+*/
+
+
+
+
 
