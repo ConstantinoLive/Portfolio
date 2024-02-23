@@ -1,0 +1,223 @@
+/***********************Fuentes*************************/
+@import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Goldman:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Goldman:wght@400;700&family=Iceland&display=swap');
+/*******************************************************/
+
+.fon_nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-family: 'Iceland', cursive;
+    font-size: 30px;
+    /*border-radius: 9px;
+    border-color: rgb(87, 78, 78);
+    border-style: inset;*/
+    background-color: rgb(38, 38, 38);
+}
+
+nav:hover a{
+    filter: blur(5px);
+    transition: .8s;
+}
+
+nav a:hover{
+    filter: blur(0px);
+    transition: .8s;
+}
+
+.Menu {
+    color: rgb(248, 248, 248);
+    margin: 5px;
+    text-decoration: none;
+    text-align: justify;
+    font-size: 2vw;
+
+}
+
+/***************************FORMULARIO**************************************************/
+
+.escribime {
+    font-family: 'Goldman', cursive;
+    color: rgb(151, 151, 149);
+    font-size: 5.5vw;
+    position: absolute;
+    display: block;
+    text-align: center;
+    margin-top: 1.2rem;
+    margin-left: 20rem;
+    z-index: 3;
+}
+
+.formulario {
+    font-family: 'Iceland', cursive;
+    color: rgb(248, 248, 248);
+    position: relative;
+    width: 280px;
+}
+
+label {
+    position: absolute;
+    left: 10px;
+    top: 8px;
+    transition: all 0.5s;
+    padding: 0px 2px;
+    z-index: 1;
+    color: #7e4ccb;
+    font-size: 20px;
+}
+
+.text-input {
+    position: relative;
+    padding: 12px;
+    width: 100%;
+    height: 100%;
+    border: 2px solid;
+    border-color: #7e4ccb;
+    background-color: transparent;
+    outline: none;
+    transition: all 0.5s;
+    font-family: 'Iceland', cursive;
+    color: rgb(248, 248, 248);
+    font-size: 20px;
+}
+
+label::before {
+    content: "";
+    height: 5px;
+    background-color: transparent;
+    position: absolute;
+    left: 0px;
+    top: 10px;
+    width: 100%;
+    z-index: -10;
+}
+
+.text-input:focus+label {
+    top: -10px;
+    color: #7e4ccb;
+    font-size: 14px;
+    background-color: black;
+}
+
+.text-input:not(:placeholder-shown)+label {
+    top: -10px;
+    color: #7e4ccb;
+    font-size: 14px;
+    background-color: black;
+}
+
+.text-input:focus {
+    border: 2px solid #7e4ccb;
+}
+
+.text-input::placeholder {
+    font-size: 16px;
+    opacity: 0;
+    transition: all 0.3s;
+}
+
+.text-input:focus::placeholder {
+    opacity: 1;
+}
+
+label {
+    text-align: left;
+}
+
+.form_x_container {
+    position: absolute;
+    width: 80rem;
+    height: 600px;
+    max-width: 80rem;
+    max-height: 600px;
+    border-radius: 40px 5px;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    z-index: 2;
+}
+
+.form_x_container::before {
+    position: absolute;
+    width: 250%;
+    height: 250%;
+    content: "";
+    background-image: conic-gradient(transparent, transparent, rgb(0, 38, 255), rgb(106, 11, 90), rgb(215, 28, 84));
+    animation: rotate_border 4s linear infinite;
+    animation-delay: -10s;
+}
+
+.form_x_container::after {
+    position: absolute;
+    width: 250%;
+    height: 250%;
+    content: "";
+    background-image: conic-gradient(transparent, transparent, rgb(0, 38, 255), rgb(106, 11, 90), rgb(215, 28, 84));
+    animation: rotate_border 4s linear infinite;
+    animation-delay: -10s;
+}
+
+@keyframes rotate_border {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.form_x {
+    position: absolute;
+    content: "";
+    background-color: black;
+    border-radius: 40px 5px;
+    z-index: 2;
+    inset: -1px;
+    margin: 5px 5px 5px 5px;
+    padding: 18px 18px 5px 16px;
+}
+
+button {
+    display: block;
+    z-index: 3;
+    padding: 1vw 4vw;
+    background-color: rgb(106, 11, 90);
+    color: white;
+    transform-style: preserve-3d;
+}
+
+.button-wrapper {
+    position: relative;
+    border: 0;
+    border-radius: 10px;
+    font-family: 'Iceland', cursive;
+    font-size: 1.5rem;
+    perspective: 400px;
+    align-self: flex-start;
+}
+
+#botonMovable {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    transition: transform 0.3s;
+}
+
+.aclaracion {
+    position: absolute;
+    text-align: center;
+    font-family: 'Goldman', cursive;
+    font-size: 2vw;
+    color: rgb(207, 205, 205);
+    margin-top: 25rem;
+    margin-left: 25rem;
+    margin-right: 4rem;
+    z-index: 3;
+}
+
+/*******************************************************************/
