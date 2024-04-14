@@ -25,31 +25,39 @@
 </head>
 
 <body>
-    <nav>
-        <div class="fon_nav fixed-top">
-            <a href="./Web.html" ; class="Menu">inicio<img src="./Icons/inicio.png" width="18%"></a>
-            <a href="./quien_soy.html" ; class="Menu">quién soy?<img src="./Icons/soy.png" width="15%"></a>
-            <a href="./trabajos.html" ; class="Menu">curriculum<img src="./Icons/trabajo.png" width="15%"></a>
-            <a href="./hobbys.html" ; class="Menu">hobbys<img src="./Icons/hobby.png" width="15%"></a>
-            <a href="./contactos.html" ; class="Menu"> contacto <img src="./Icons/contacto.png" width="15%"></a>
-            <br>
+    <nav class="navbar navbar-expand-lg " style="background-color: black; margin-top: 15px;">
+        <div class="container-fluid">
+            <button class="navbar-toggler collapsed" style="font-size: small;" type="button" data-bs-toggle="collapse"
+                data-bs-target="#Menu">
+                <span class="toggler-icon top-bar"></span>
+                <span class="toggler-icon middle-bar"></span>
+                <span class="toggler-icon bottom-bar"></span>
+            </button>
+            <div class="fon_nav collapse navbar-collapse" id="Menu"
+                style="margin-top: -30px; margin-left:45px; margin-right:45px">
+                <a href="./Web.html" ; class="Menu">inicio<img src="./Icons/inicio.png" width="18%"></a>
+                <a href="./quien_soy.html" ; class="Menu">quién soy?<img src="./Icons/soy.png" width="15%"></a>
+                <a href="./trabajos.html" ; class="Menu">curriculum<img src="./Icons/trabajo.png" width="15%"></a>
+                <a href="./hobbys.html" ; class="Menu">hobbys<img src="./Icons/hobby.png" width="15%"></a>
+                <a href="./contactos.html" ; class="Menu"> contacto <img src="./Icons/contacto.png" width="15%"></a>
+            </div>
         </div>
     </nav>
-    <br><br><br>
+
     <h2 class="titulo">Estos son algunos de los proyectos en los que he trabajado...</h2>
     <br>
 
     <div class="wrapper">
-        <div class="cols">
-            <div class="col" ontouchstart="this.classList.toggle('hover');">
-                <div class="container">
-                    <div class="front" style="background-image:url(./Img/Portada_pfl.png)">
+        <div class="row cols" >
+            <div class="col-lg-6">
+                <div class="container ">
+                    <div class="front" style="background-image:url(./Img/Portada_pfl.png); ">
                         <div class="inner">
                             <p>Portfolio</p>
                             <span>Fernando Clingo</span>
                         </div>
                     </div>
-                    <div class="back" >
+                    <div class="back">
                         <div class="inner">
                             <p>Este portfolio fue realizado en Visual Studio Code utilizando HTML, CSS, Bootstrap y
                                 Javascript. El objetivo es
@@ -67,15 +75,15 @@
                     </div>
                 </div>
             </div>
-            <div class="col" ontouchstart="this.classList.toggle('hover');">
-                <div class="container">
-                    <div class="front" style="background-image: url(./Img/Portada_cac.png)">
+            <div class="col-lg-6" >
+                <div class="container ">
+                    <div class="front" style="background-image: url(./Img/Portada_cac.png);">
                         <div class="inner">
                             <p>CONFERENCIA</p>
                             <span>Codo a Codo</span>
                         </div>
                     </div>
-                    <div class="back" >
+                    <div class="back">
                         <div class="inner">
                             <p>Proyecto web realizado en Visual Studio Code en el marco de la cursada fullstack. En el
                                 mismo se utilizó HTML,
@@ -97,16 +105,16 @@
                 </div>
             </div>
         </div>
-        <div class="cols">
-            <div class="col" ontouchstart="this.classList.toggle('hover');">
-                <div class="container">
-                    <div class="front" style="background-image: url(./Img/Portada_ZvsP.png)">
+        <div class="row cols" >
+            <div class="col-lg-6">
+                <div class="container ">
+                    <div class="front" style="background-image: url(./Img/Portada_ZvsP.png);">
                         <div class="inner">
                             <p>ZOMBIES VS PLANTAZ</p>
                             <span>Grupo U.T.N.</span>
                         </div>
                     </div>
-                    <div class="back" >
+                    <div class="back">
                         <div class="inner">
                             <p>Juego hecho en Visual Studio con C++ utilizando la librería gráfica SFML.
                                 Este proyecto fue realizado en equipo en el marco de la
@@ -124,64 +132,65 @@
                     </div>
                 </div>
             </div>
-            <div class="col">
-                <div class="container">
-                    <div id="marco_1">
-                        <div id="marco_2">
-                            <p style="color:rgb(142, 140, 140)">Sinopsis del juego</p>
-                            <p class="history">En un presente distópico, en donde el veganismo se transformó en
-                                un
-                                estilo de vida común a todos, se produjo un aumento en la demanda de frutas y
-                                verduras.
-                                Ante la necesidad de aumentar la producción de alimentos, la manipulación
-                                genética y la
-                                desmedida utilización de agrotóxicos no se hizo esperar. Científicos encontraron
-                                en la
-                                Trioxina 245 un potente y eficaz herbicida… o eso creían. Efectos secundarios en
-                                su uso,
-                                y sobre todo en su ingesta, produjo una mutación genética no solo en humanos,
-                                sino
-                                también en plantas. El principal efecto en humanos fue la destrucción de tejidos
-                                y del
-                                sistema nervioso en una primera etapa. Posteriormente la reconstrucción de los
-                                mismos y
-                                de algunas funciones básicas. Esto convirtió a las personas en lo que se conoce
-                                como
-                                ZOMBIES. Muertos vivientes, por decirlo de alguna manera, sedientos de un hambre
-                                voraz…
-                                por los vegetales.
-                                En plantas, la Trioxina 245 tuvo el mismo efecto. La diferencia es que las
-                                plantas nunca
-                                tuvieron sistema nervioso. Hasta ahora…
-                                Esta aberrante mutación en plantas y vegetales, sumado a la insaciable sed de
-                                clorofila
-                                de los zombies, las obligó a evolucionar para defenderse de ellos. Ahora hay una
-                                guerra
-                                con dos bandos. Uno en busca de comida, otro que busca no convertirse en ella.
-                            </p>
+            <div class="col-lg-6" >
+                <div class="container_2" >
+                    <div class="marco_1">
+                        <div class="marco_2">
+                            <div class="history">
+                                <p style="color:rgb(142, 140, 140)">Sinopsis del juego</p>
+                                <p >En un presente distópico, en donde el veganismo se transformó en
+                                    un
+                                    estilo de vida común a todos, se produjo un aumento en la demanda de frutas y
+                                    verduras.
+                                    Ante la necesidad de aumentar la producción de alimentos, la manipulación
+                                    genética y la
+                                    desmedida utilización de agrotóxicos no se hizo esperar. Científicos encontraron
+                                    en la
+                                    Trioxina 245 un potente y eficaz herbicida… o eso creían. Efectos secundarios en
+                                    su uso,
+                                    y sobre todo en su ingesta, produjo una mutación genética no solo en humanos,
+                                    sino
+                                    también en plantas. El principal efecto en humanos fue la destrucción de tejidos
+                                    y del
+                                    sistema nervioso en una primera etapa. Posteriormente la reconstrucción de los
+                                    mismos y
+                                    de algunas funciones básicas. Esto convirtió a las personas en lo que se conoce
+                                    como
+                                    ZOMBIES. Muertos vivientes, por decirlo de alguna manera, sedientos de un hambre
+                                    voraz…
+                                    por los vegetales.
+                                    En plantas, la Trioxina 245 tuvo el mismo efecto. La diferencia es que las
+                                    plantas nunca
+                                    tuvieron sistema nervioso. Hasta ahora…
+                                    Esta aberrante mutación en plantas y vegetales, sumado a la insaciable sed de
+                                    clorofila
+                                    de los zombies, las obligó a evolucionar para defenderse de ellos. Ahora hay una
+                                    guerra
+                                    con dos bandos. Uno en busca de comida, otro que busca no convertirse en ella.
+                                </p>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="cols">
-            <div class="col" ontouchstart="this.classList.toggle('hover');">
-                <div class="container">
-                    <div class="front" style="background-image: url(./Img/Portada_jdlv.png)">
+        <div class="row cols" >
+            <div class="col-lg-6">
+                <div class="container ">
+                    <div class="front" style="background-image: url(./Img/Portada_jdlv.png);">
                         <div class="inner">
                             <p>JUEGO DE LA VIDA</p>
                             <span>John Horton Conway</span>
                         </div>
                     </div>
-                    <div class="back" >
+                    <div class="back">
                         <div class="inner">
                             <p>Juego hecho en Visual Studio Code con Python. Utilicé librerias como NUMPY para la
                                 generación
                                 de posiciones
                                 al azar de las células,
                                 MATPLOTLIB para la generación del gráfico y animación y TKINTER para la interfaz
-                                gráfica. El programa cuenta
-                                con cuatro botones de fácil interpretación.</p>
+                                gráfica.</p>
                             <div class="card-buttons">
                                 <ul>
                                     <li>
@@ -194,27 +203,19 @@
                     </div>
                 </div>
             </div>
-            <div class="col">
-                <div class="container">
-                    <div class="card" id="tarjeta">
-                        <!--<video width="100%" controls>
-                                <source src="./Video/el-juego-de-la-vida-historia.mp4">
-                            </video>-->
-                        <iframe width="575" height="280"
-                            src="https://www.youtube.com/embed/NBX8DALsJiQ?si=c0nMkHVZ_urXLD9C"
+            <div class="col-lg-6" >
+                <div class="container_2">
+                    <div id="tarjeta">
+                        <iframe width="100%" height="100%" src="https://www.youtube.com/embed/NBX8DALsJiQ?si=c0nMkHVZ_urXLD9C"
                             title="YouTube video player" frameborder="0"
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                             referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                        <!--<div class="card-body">
-                            <p class="card-text">Una breve explicación sobre el juego y su creador John Horton Conway
-                            </p>
-                        </div>-->
                     </div>
                 </div>
             </div>
         </div>
     </div>
 </body>
-<!--<script src="./Funciones.js"></script>-->
+<!--width="625" height="280"-->
 
 </html>

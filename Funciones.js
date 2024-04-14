@@ -51,10 +51,7 @@ const distanceBetween = (p1x, p1y, p2x, p2y) => {
     return Math.sqrt(dx * dx + dy * dy);
 };
 
-/************************************************************/
-
 /************************Trabajo****************************/
-
 
 /*
 FUNCION PARA GIRAR EL CARRUSEL CON EL MOUSE
@@ -108,8 +105,6 @@ document.querySelector('#carousel').addEventListener('mouseleave', function () {
     startRotation();
 });
 
-
-
 /************************************************************/
 
 /*
@@ -137,8 +132,6 @@ document.getElementById('carousel').addEventListener('mousemove', function (e) {
     closestImage.classList.add('enfocada');
 });
 */
-
-
 
 
 

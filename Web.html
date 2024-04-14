@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="./Icons/Logo.png"/>
+    <link rel="icon" href="./Icons/Logo.png" />
     <title>Portfolio</title>
     <link rel="stylesheet" href="Style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
@@ -22,55 +22,62 @@
 </head>
 
 <body>
-    <div class="container_1">
-        <div class="fon_nav_index">
-            <ul class="menu_index">
-                <li class="item_lista">
-                    <a href="./quien_soy.html"> <img src="./Icons/soy.png" width="15%">
-                        <span>quién soy?</span>
-                    </a>
-                </li>
-                <li class="item_lista">
-                    <a href="./estudios.html"> <img src="./Icons/portafolio.png" width="15%">
-                        <span>portfolio</span>
-                    </a>
-                </li>
-                <li class="item_lista">
-                    <a href="./trabajos.html"> <img src="./Icons/trabajo.png" width="15%">
-                        <span>curriculum</span>
-                    </a>
-                </li>
-                <li class="item_lista">
-                    <a href="./hobbys.html"> <img src="./Icons/hobby.png" width="15%">
-                        <span>hobbys</span>
-                    </a>
-                </li>
-                <li class="item_lista">
-                    <a href="./contactos.html"> <img src="./Icons/contacto.png" width="15%">
-                        <span>contacto</span>
-                    </a>
-                </li>
-            </ul>
-            <div class="tit">
-                <h1 class="titulo">
-                    Fernando
-                </h1>
-                <h1 class="titulo">
-                    Clingo
-                </h1>
+    <nav class="navbar navbar-expand-lg">
+        <div class="container_1">
+            <button class="navbar-toggler collapsed" style="font-size: small; " type="button" data-bs-toggle="collapse" data-bs-target="#Menu">
+                <span class="toggler-icon top-bar"></span>
+                <span class="toggler-icon middle-bar"></span>
+                <span class="toggler-icon bottom-bar"></span>
+            </button>
+            <div class="fon_nav_index collapse navbar-collapse" id="Menu">
+                <ul class="menu_index animate__animated animate__zoomIn">
+                    <li class="item_lista" style="margin-bottom: 2vw;">
+                        <a href="./quien_soy.html" > <img src="./Icons/soy.png" width="20%">
+                            <span>quién soy?</span>
+                        </a>
+                    </li>
+                    <li class="item_lista" style="margin-bottom: 2vw;">
+                        <a href="./estudios.html"> <img src="./Icons/portafolio.png" width="20%">
+                            <span>portfolio</span>
+                        </a>
+                    </li>
+                    <li class="item_lista" style="margin-bottom: 2vw;">
+                        <a href="./trabajos.html"> <img src="./Icons/trabajo.png" width="20%">
+                            <span>curriculum</span>
+                        </a>
+                    </li>
+                    <li class="item_lista" style="margin-bottom: 2vw;">
+                        <a href="./hobbys.html"> <img src="./Icons/hobby.png" width="20%">
+                            <span>hobbys</span>
+                        </a>
+                    </li>
+                    <li class="item_lista" style="margin-bottom: 2vw;">
+                        <a href="./contactos.html"> <img src="./Icons/contacto.png" width="20%">
+                            <span>contacto</span>
+                        </a>
+                    </li>
+                </ul>
             </div>
-            <div class="sub_t">
-                <h2>
-                    <div class="subtitulo">
-                        Developer
-                    </div>
-                </h2>
-            </div>
-            <img src="./Img/Perfil_negro.png" style="position: absolute; top: 1vw; left: 60vw; z-index: -3;" width=30%>
         </div>
+    </nav>
+    <img src="./Img/Perfil_negro.png" style="position: absolute; top: 1vw; left: 60vw; z-index: -3;" width=30%>
+    <div class="tit animate__animated animate__fadeInDown">
+        <h1 class="titulo ">
+            Fernando
+        </h1>
+        <h1 class="titulo">
+            Clingo
+        </h1>
+    </div>
+    <div class="sub_t animate__animated animate__fadeInLeft">
+        <h2>
+            <div class="subtitulo">
+                Developer
+            </div>
+        </h2>
     </div>
     <footer>
-        <div class="fon_footer">
+        <div class="fon_footer container-fluid">
             <p class="p2">Redes Sociales </p>
             <a href="https://ar.linkedin.com/in/fernando-clingo-40237523b" target="_blank"><img src="./Icons/in5.png"
                     width="3%"> </a>
@@ -78,6 +85,9 @@
             <br>
         </div>
     </footer>
+
+
 </body>
+
 
 </html>

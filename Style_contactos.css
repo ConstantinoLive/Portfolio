@@ -31,8 +31,80 @@ nav a:hover{
     margin: 5px;
     text-decoration: none;
     text-align: justify;
-    font-size: 2vw;
+    font-size: 2.5vw;
 
+}
+
+/****************************Hamburger button*****************************/
+.navbar-toggler{
+	width: 30px;
+	height:30px;
+	position: relative;
+    transition: .5s ease-in-out;
+	cursor:pointer;
+    font-size: small;
+}
+
+.navbar-toggler,
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler-icon:focus{
+    font-size: small;
+    outline: none;
+    border: 0;
+    box-shadow: 0;
+}
+
+.navbar-toggler span{
+    margin: 0 0 0 -8px;
+    padding: 0;   
+}
+
+.toggler-icon{
+    display:block;
+    position: absolute;
+    height: 3px;
+    width: 100%;
+    background: linear-gradient(30deg, rgb(0, 38, 255), rgb(106, 11, 90), rgb(215, 28, 84));
+    border-radius: 2px;
+    opacity: 10;
+    left: 20px;
+    transform: rotate(0deg);
+    transition: .25s ease-in-out;
+}
+
+.middle-bar{
+    margin-top: 0;
+}
+
+.navbar-toggler .top-bar{
+    margin-top: 0;
+    transform: rotate(135deg);
+}
+
+.navbar-toggler .middle-bar{
+    opacity: 0;
+    filter: alpha(opacity=0);
+}
+
+.navbar-toggler .bottom-bar{
+    margin-top: 0;
+    transform: rotate(-135deg);
+}
+
+.navbar-toggler.collapsed .top-bar{
+    margin-top: -8px;
+    transform: rotate(0deg);
+}
+
+.navbar-toggler.collapsed .middle-bar{
+    opacity: 1;
+    filter: alpha(opacity=100);
+}
+
+.navbar-toggler.collapsed .bottom-bar{
+    margin-top: 8px;
+    transform: rotate(0deg);
 }
 
 /***************************FORMULARIO**************************************************/
@@ -40,13 +112,13 @@ nav a:hover{
 .escribime {
     font-family: 'Goldman', cursive;
     color: rgb(151, 151, 149);
-    font-size: 5.5vw;
-    position: absolute;
+    font-size: 4vw;
+    position: relative;
     display: block;
     text-align: center;
-    margin-top: 1.2rem;
+    /*margin-top: 1.2rem;
     margin-left: 20rem;
-    z-index: 3;
+    z-index: 3;*/
 }
 
 .formulario {
@@ -59,7 +131,7 @@ nav a:hover{
 label {
     position: absolute;
     left: 10px;
-    top: 8px;
+    top: 6px;
     transition: all 0.5s;
     padding: 0px 2px;
     z-index: 1;
@@ -79,7 +151,7 @@ label {
     transition: all 0.5s;
     font-family: 'Iceland', cursive;
     color: rgb(248, 248, 248);
-    font-size: 20px;
+    font-size: 15px;
 }
 
 label::before {
@@ -88,7 +160,7 @@ label::before {
     background-color: transparent;
     position: absolute;
     left: 0px;
-    top: 10px;
+    top: 5px;
     width: 100%;
     z-index: -10;
 }
@@ -127,11 +199,15 @@ label {
 
 .form_x_container {
     position: absolute;
-    width: 80rem;
+    width: 80vw;
+    height: 41vw;
+    max-width: 80vw;
+    max-height: 41vw;
+    /*width: 80rem;
     height: 600px;
     max-width: 80rem;
-    max-height: 600px;
-    border-radius: 40px 5px;
+    max-height: 600px;*/
+    border-radius: 2.08vw .26vw;
     background-color: black;
     display: flex;
     align-items: center;
@@ -174,38 +250,63 @@ label {
     position: absolute;
     content: "";
     background-color: black;
-    border-radius: 40px 5px;
+    border-radius: 2.08vw .26vw;
     z-index: 2;
     inset: -1px;
     margin: 5px 5px 5px 5px;
     padding: 18px 18px 5px 16px;
+    overflow-y: auto;
+}
+
+.form_x::-webkit-scrollbar{
+    width: 8px;
+    background: rgba(128, 128, 128, 0);
+}
+
+.form_x::-webkit-scrollbar-thumb{
+    background: rgba(128, 128, 128, 0.351);
+    border-radius: 8px;
+
+}
+
+.form_x::-webkit-scrollbar-button{
+    background-color: rgba(128, 128, 128, 0);
+
 }
 
 button {
+    position: relative;
     display: block;
     z-index: 3;
     padding: 1vw 4vw;
-    background-color: rgb(106, 11, 90);
+    /*background-color: rgb(106, 11, 90);*/
     color: white;
     transform-style: preserve-3d;
+    
 }
 
 .button-wrapper {
-    position: relative;
+    position: absolute;
     border: 0;
     border-radius: 10px;
     font-family: 'Iceland', cursive;
     font-size: 1.5rem;
     perspective: 400px;
     align-self: flex-start;
+    /*margin-top: 250px;
+    margin-left: -100px;*/
+    background: linear-gradient(30deg, rgb(0, 38, 255), rgb(106, 11, 90), rgb(215, 28, 84));
 }
 
 #botonMovable {
-    position: absolute;
+    position: relative; /*absolute*/
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
     transition: transform 0.3s;
+    margin-top: 13rem; /*8rem*/
+    margin-left: -5.21rem;
+    z-index: 200;
 }
 
 .aclaracion {
@@ -214,9 +315,12 @@ button {
     font-family: 'Goldman', cursive;
     font-size: 2vw;
     color: rgb(207, 205, 205);
-    margin-top: 25rem;
+    /*margin-top: 25rem;
     margin-left: 25rem;
-    margin-right: 4rem;
+    margin-right: 4rem;*/
+    /*margin-top: 14.5rem;
+    margin-left: 25rem;*/
+    
     z-index: 3;
 }
 

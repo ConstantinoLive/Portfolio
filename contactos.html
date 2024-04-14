@@ -25,26 +25,28 @@
 </head>
 
 <body>
-
-    <nav>
-        <div class="fon_nav">
-            <a href="./Web.html" ; class="Menu">inicio<img src="./Icons/inicio.png" width="18%"></a>
-            <a href="./quien_soy.html" ; class="Menu">quién soy?<img src="./Icons/soy.png" width="15%"></a>
-            <a href="./estudios.html" ; class="Menu">portfolio<img src="./Icons/portafolio_1.png" width="15%"></a>
-            <a href="./trabajos.html" ; class="Menu">curriculum<img src="./Icons/trabajo.png" width="15%"></a>
-            <a href="./hobbys.html" ; class="Menu">hobbys<img src="./Icons/hobby.png" width="15%"></a>
-            <br>
+    <nav class="navbar navbar-expand-lg " style="background-color: black; margin-top: 15px;">
+        <div class="container-fluid">
+            <button class="navbar-toggler collapsed" style="font-size: small;" type="button" data-bs-toggle="collapse" data-bs-target="#Menu">
+                <span class="toggler-icon top-bar"></span>
+                <span class="toggler-icon middle-bar"></span>
+                <span class="toggler-icon bottom-bar"></span>
+            </button>
+            <div class="fon_nav collapse navbar-collapse" id="Menu" style="margin-top: -30px; margin-left:45px; margin-right:45px">
+                <a href="./Web.html" ; class="Menu">inicio<img src="./Icons/inicio.png" width="18%"></a>
+                <a href="./quien_soy.html" ; class="Menu">quién soy?<img src="./Icons/soy.png" width="15%"></a>
+                <a href="./estudios.html" ; class="Menu">portfolio<img src="./Icons/portafolio_1.png" width="15%"></a>
+                <a href="./trabajos.html" ; class="Menu">curriculum<img src="./Icons/trabajo.png" width="15%"></a>
+                <a href="./hobbys.html" ; class="Menu">hobbys<img src="./Icons/hobby.png" width="15%"></a>
+            </div>
         </div>
     </nav>
-
-
     <br>
-
     <form action="Archivo.php" method="post" id="Formulario">
         <div class="container">
-            <h3 class="escribime animate__animated animate__pulse">Contactame ahora</h3>
             <div class="form_x_container">
                 <div class="form_x">
+                    <h3 class="escribime animate__animated animate__pulse">Contactame ahora</h3>
                     <div class="formulario animate__animated animate__fadeInUp">
                         <input class="text-input" type="text" name="firstname" id="firstname" placeholder="" required />
                         <label>Nombre</label>
@@ -75,15 +77,16 @@
                             required></textarea>
                         <label>Comentarios</label>
                     </div>
+                    
                 </div>
             </div>
         </div>
     </form>
     <button type="submit" id="botonMovable" class="button-wrapper">Enviar</button>
-    <div class="aclaracion">
+    <!--<div class="aclaracion">
         <p>No quieras "enviar" el formulario sin antes completarlo...</p>
         <p>no vas a poder!!</p>
-    </div>
+    </div>-->
 
 </body>
 <script src="Funciones.js"></script>
