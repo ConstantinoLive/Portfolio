@@ -274,6 +274,8 @@ label {
 
 }
 
+/*************************Boton de envio****************************/
+
 button {
     position: relative;
     display: block;
@@ -299,15 +301,17 @@ button {
 }
 
 #botonMovable {
-    position: relative; /*absolute*/
+    position: absolute; /*absolute*/
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
     transition: transform 0.3s;
-    margin-top: 13rem; /*8rem*/
+    margin-top: 7rem; /*8rem*/
     margin-left: -5.21rem;
     z-index: 200;
 }
+
+/***********************Leyenda*************************/
 
 .aclaracion {
     position: absolute;
