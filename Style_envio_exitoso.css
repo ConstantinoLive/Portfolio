@@ -1,0 +1,248 @@
+/***********************Fuentes*************************/
+@import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Goldman:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Goldman:wght@400;700&family=Iceland&display=swap');
+/*******************************************************/
+/****************Marco *********************/
+.form_x_container {
+    position: absolute;
+    width: 100%;/*99vw;*/
+    height: 100%;/*46vw;*/
+    max-width: 100%;/*99vw;*/
+    max-height: 150%;/*46vw;*/
+    /*width: 80rem;
+    height: 600px;
+    max-width: 80rem;
+    max-height: 600px;*/
+    border-radius: 6.08vw .26vw;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    z-index: 2;
+}
+
+.form_x_container::before {
+    position: absolute;
+    width: 250%;
+    height: 250%;
+    content: "";
+    background-image: conic-gradient(transparent, transparent, rgb(0, 38, 255), rgb(106, 11, 90), rgb(215, 28, 84));
+    animation: rotate_border 4s linear infinite;
+    animation-delay: -10s;
+}
+
+.form_x_container::after {
+    position: absolute;
+    width: 250%;
+    height: 250%;
+    content: "";
+    background-image: conic-gradient(transparent, transparent, rgb(0, 38, 255), rgb(106, 11, 90), rgb(215, 28, 84));
+    animation: rotate_border 4s linear infinite;
+    animation-delay: -10s;
+}
+
+@keyframes rotate_border {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.form_x {
+    position: absolute;
+    content: "";
+    background-color: black;
+    border-radius: 6.08vw .26vw;
+    z-index: 2;
+    inset: -1px;
+    margin: 5px 5px 5px 5px;
+    padding: 18px 18px 5px 16px;
+    overflow-y: auto;
+}
+
+/**********************Boton**********************/
+
+.card-buttons>ul li a {
+    position: relative;
+    display: block;
+    flex-direction: row;
+    padding: .3rem .5rem;/*5px 15px;*/
+    /*padding: 10px;*/
+    /*margin-left: 400px;*/
+    /* margin: 4px 0;*/
+    color: rgb(137, 137, 137);
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: 0.5s;
+    border-radius: 6px;
+    letter-spacing: 2px;
+    overflow: hidden;
+    /* margin-right: 5px;*/
+    font-size:1rem ;/*medium;*/
+    font-family: 'Russo One', sans-serif;
+}
+
+.card-buttons a:link {
+    text-decoration: none;
+}
+
+.card-buttons ul li a:hover {
+    background-color: aqua;
+    box-shadow: 0 0 5px aqua,
+        0 0 25px aqua,
+        0 0 50px aqua,
+        0 0 200px aqua;
+    -webkit-box-reflect: below 15px linear-gradient (transparent, aqua);
+}
+
+.card-buttons {
+    font-family: 'Russo One', sans-serif;
+    /*font-size: 1vw ;/*small;*/
+    padding: 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 1rem;/*agregado*/
+}
+
+.card-buttons>ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.card-buttons>ul li {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.card-buttons > ul li a:hover::before {
+    position: absolute;
+    background-color:aqua;
+    box-shadow: 0 0 5px aqua,
+        0 0 25px aqua,
+        0 0 50px aqua,
+        0 0 200px aqua;
+    -webkit-box-reflect: below 15px linear-gradient (transparent, aqua);
+    content: "";
+    animation: chitchat 1.8s linear both;
+}
+
+@keyframes chitchat {
+    0% {
+        content: "#";
+    }
+
+    5% {
+        content: ".";
+    }
+
+    10% {
+        content: "^{";
+    }
+
+    15% {
+        content: "-!";
+    }
+
+    20% {
+        content: "#$_";
+    }
+
+    25% {
+        content: "№:0";
+    }
+
+    30% {
+        content: "#{+.";
+    }
+
+    35% {
+        content: "@}-?";
+    }
+
+    40% {
+        content: "?{4@%";
+    }
+
+    45% {
+        content: "=.,^!";
+    }
+
+    50% {
+        content: "?2@%";
+    }
+
+    55% {
+        content: "\;1}]";
+    }
+
+    60% {
+        content: "?{%:%";
+        right: 0;
+    }
+
+    65% {
+        content: "|{f[4";
+        right: 0;
+    }
+
+    70% {
+        content: "{4%0%";
+        right: 0;
+    }
+
+    75% {
+        content: "'1_0<";
+        right: 0;
+    }
+
+    80% {
+        content: "{0%";
+        right: 0;
+    }
+
+    85% {
+        content: "]>'";
+        right: 0;
+    }
+
+    90% {
+        content: "4";
+        right: 0;
+    }
+
+    95% {
+        content: "2";
+        right: 0;
+    }
+
+    100% {
+        content: "";
+        right: 0;
+    }
+}
+
+.mensaje{
+    font-family: 'Iceland', cursive;
+    font-size: 3vw;
+    color:  rgb(248, 248, 248);
+    text-align: center;
+    position: relative;
+    margin-top: 5vw;
+}
+
+img{
+    margin-top: -4vw;
+    margin-left: 18vw;
+    opacity: .5;
+}
+
+li a{
+    margin-top: 5vw;
+}

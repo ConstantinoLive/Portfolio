@@ -199,14 +199,14 @@ label {
 
 .form_x_container {
     position: absolute;
-    width: 80vw;
-    height: 41vw;
+    /*width: 80vw;
+    height: 39vw;
     max-width: 80vw;
-    max-height: 41vw;
-    /*width: 80rem;
-    height: 600px;
-    max-width: 80rem;
-    max-height: 600px;*/
+    max-height: 39vw;*/
+    width: 92%;
+    height: 85%;
+    max-width: 92%;
+    max-height: 120%;
     border-radius: 2.08vw .26vw;
     background-color: black;
     display: flex;
@@ -302,12 +302,12 @@ button {
 
 #botonMovable {
     position: absolute; /*absolute*/
-    left: 50%;
+    left: 46%;
     top: 50%;
     transform: translate(-50%, -50%);
     transition: transform 0.3s;
-    margin-top: 7rem; /*8rem*/
-    margin-left: -5.21rem;
+    margin-top: 10rem; /*8rem*/
+    margin-left: 7.21rem;
     z-index: 200;
 }
 

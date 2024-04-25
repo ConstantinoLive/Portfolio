@@ -32,7 +32,7 @@
                 <span class="toggler-icon middle-bar"></span>
                 <span class="toggler-icon bottom-bar"></span>
             </button>
-            <div class="fon_nav collapse navbar-collapse" id="Menu" style="margin-top: -30px; margin-left:45px; margin-right:45px">
+            <div class="fon_nav collapse navbar-collapse" id="Menu" style="margin-top: -30px; margin-left:45px; margin-right:30px">
                 <a href="./Web.html" ; class="Menu">inicio<img src="./Icons/inicio.png" width="18%"></a>
                 <a href="./quien_soy.html" ; class="Menu">quién soy?<img src="./Icons/soy.png" width="15%"></a>
                 <a href="./estudios.html" ; class="Menu">portfolio<img src="./Icons/portafolio_1.png" width="15%"></a>
@@ -42,8 +42,8 @@
         </div>
     </nav>
     <br>
-    <form action="email.php" method="post" id="Formulario">
-        <!--<form action="https://formsubmit.co/your@email.com" method="POST" id="Formulario"-->
+    <form action="email.php" method="post" id="Formulario" autocomplete="off">
+    <!--<form action="https://formsubmit.co/fernandoclingo@live.com.ar" method="POST" id="Formulario">-->
         <div class="container">
             <div class="form_x_container">
                 <div class="form_x">
@@ -78,11 +78,12 @@
                             required></textarea>
                         <label>Comentarios</label>
                     </div>
-                    
                 </div>
             </div>
         </div>
-        <button type="submit" id="botonMovable" class="button-wrapper">Enviar</button>
+        <!--<input type="hidden" name="_next" value="./envio_exitoso.html">
+        <input type="hidden" name="_captcha" value="false">-->
+        <button type="submit" id="botonMovable" class="button-wrapper btn-outline-success">Enviar</button>
     </form>
     
     <!--<div class="aclaracion">
