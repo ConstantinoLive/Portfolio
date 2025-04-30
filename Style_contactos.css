@@ -116,16 +116,15 @@ nav a:hover{
     position: relative;
     display: block;
     text-align: center;
-    /*margin-top: 1.2rem;
-    margin-left: 20rem;
-    z-index: 3;*/
+    padding-bottom: 3vw;
 }
 
 .formulario {
     font-family: 'Iceland', cursive;
     color: rgb(248, 248, 248);
     position: relative;
-    width: 280px;
+    width: 35vw;
+    margin-left: 8vw;
 }
 
 label {
@@ -199,11 +198,7 @@ label {
 
 .form_x_container {
     position: absolute;
-    /*width: 80vw;
-    height: 39vw;
-    max-width: 80vw;
-    max-height: 39vw;*/
-    width: 92%;
+    width: 52%;
     height: 85%;
     max-width: 92%;
     max-height: 120%;
@@ -302,30 +297,14 @@ button {
 
 #botonMovable {
     position: absolute; /*absolute*/
-    left: 46%;
-    top: 50%;
+    left: 70%;
+    top: 70%;
     transform: translate(-50%, -50%);
     transition: transform 0.3s;
-    margin-top: 10rem; /*8rem*/
-    margin-left: 7.21rem;
+    /*margin-top: 8rem; 
+    margin-left: 7.21rem;*/
     z-index: 200;
 }
 
-/***********************Leyenda*************************/
-
-.aclaracion {
-    position: absolute;
-    text-align: center;
-    font-family: 'Goldman', cursive;
-    font-size: 2vw;
-    color: rgb(207, 205, 205);
-    /*margin-top: 25rem;
-    margin-left: 25rem;
-    margin-right: 4rem;*/
-    /*margin-top: 14.5rem;
-    margin-left: 25rem;*/
-    
-    z-index: 3;
-}
 
 /*******************************************************************/

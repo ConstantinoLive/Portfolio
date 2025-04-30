@@ -327,15 +327,15 @@ nav a:hover{
 div#carousel{
     perspective: 1200px;
     background-color:black;
-    padding-top: 5%; /*5%;*/
+    padding-top: 2%; /*5%;*/
     font-size: 0;
     margin-bottom: 10rem;
     position: relative;
-    margin-top: -290px;
+    margin-top: -20rem;
     /*overflow:visible;*/
 }
 
-div#carousel h1{
+div#carousel h2{
     background: linear-gradient(30deg, #f32170, #ff6b08, #cf23cf, #eedd44);
     letter-spacing: 2px;
     text-transform: uppercase;
@@ -487,7 +487,7 @@ div#carousel ~ span:hover{
     width: 60%;
     position: relative;
     left: 50%;
-    margin-top: 530px;
+    margin-top: 630px;
     margin-bottom: 18px;
     transform: translate(-50%, -50%);
 }
@@ -500,8 +500,8 @@ div#carousel ~ span:hover{
     -webkit-text-fill-color: transparent;
 }
 
-.title h1{
-    font-size: 3.5vw;
+.title h2{
+    font-size: 3vw;
 }
 
 .skills-list {

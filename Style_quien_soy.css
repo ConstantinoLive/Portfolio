@@ -106,3 +106,28 @@ nav a:hover{
     margin-top: 8px;
     transform: rotate(0deg);
 }
+
+/****************************Texto*****************************/
+
+p{
+    font-family: 'Goldman', cursive;
+    font-size: 1.8vw;
+    color: rgb(151, 151, 149);
+    text-align: justify;
+    margin-top: 2vw;
+    margin-right: 1vw;
+}
+
+.marco{
+    position: relative;
+    margin-top: 5vw;
+    margin-left: 5vw;
+    margin-right: 5vw;
+    padding: 0 2vw;
+    box-shadow: 5px 5px 20px 0 rgba(224, 224, 224, 0.25);
+}
+
+.cara{
+    position: relative;
+    margin-top: 5vw;
+}
